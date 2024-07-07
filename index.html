@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+    <link rel="icon" href="./images/logo-sm.png" />
+    <!--============= My Font Path ============= -->
+    <!-- Font Comfortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Font Comfortaa Recursive  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    <!--============= Css Files ============= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class=" bg-dark">
+    <!--============= Start Home Section ============== -->
+    <section id="home" class="home bg-dark pb-5">
+      <img src="./images/banner.png" alt="" class="banner w-100" />
+      <div class="container">
+        <div class="px-5 mb-5 position-sticky top-0 z-3"> 
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand logo text-white" href="#">
+                <img src="./images/logo-sm.png" alt="">
+                <span>Game Reviews</span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" data-category="mmorpg" aria-current="page" href="#">MMORPG</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="shooter" href="#">SHOOTER</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="sailing" href="#">SAILING</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="permadeath" href="#">PERMADEATH</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="superhero" href="#">SUPERHERO</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-category="pixel" href="#">PIXEL</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div id="games-row" class="row flex-wrap gap-3">
+          <!-- Items -->
+        </div>
+        </div>
+    </section>
+    <!--============== End Home Section =============== -->
+
+    <!--============ Start Details Section ============ -->
+    <section id="details" class="details bg-dark py-5 d-none">
+      <div class="container">
+        <div class="head text-white d-flex justify-content-between align-items-center mb-4">
+          <h2>Game Details:</h2>
+          <button type="button" class="btn-close btn-close-white" aria-label="Close" id="closeBtn"></button>
+        </div>
+        <div class="row">
+          <!-- <div class="col-md-4">
+            <div class="image">
+              <img src="${data.thumbnail}" alt="" class="w-100">
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="game-details pt-4 pt-md-0">
+              <h3>Title: ${data.title}</h3>
+              <h3 class="fs-6">Category: <span>Action Game</span></h3>
+              <h3 class="fs-6">Platform: <span>${data.platform}</span></h3>
+              <h3 class="fs-6">Status: <span>${data.status}</span></h3>
+              <p class="game-desc">${data.description}</p>
+              <button class="btn btn-primary"><a href="#0" class="text-white">Show Game</a></button>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+    <!--============= End Details Section ============= -->
+
+    <!--=========== Loading Spinner Element =========== -->
+    <div class="loading d-none bg-black opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 z-3">
+      <div class="spinner"></div>
+    </div>
+    <!--============== Bootstrap Js File ============== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--=============== JQuery Js File ================ -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!--================ Main Js File ================= -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
